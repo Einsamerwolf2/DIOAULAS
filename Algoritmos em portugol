@@ -1,0 +1,46 @@
+https://dgadelha.github.io/Portugol-Webstudio/
+
+// AQUI APRENDEMOS ACERCA DO CALCULO DOS INTERVALOS //
+
+programa {
+  funcao inicio() {
+    inteiro x, y
+    escreva("Digite os numeros para executar a soma dos intervalos: ")
+    leia(x)
+    leia(y)
+
+    escreva(soma_intervalo(x,y))
+  }
+
+  funcao inteiro soma_intervalo(inteiro x, inteiro y){
+    inteiro total, resultado_parcial
+    total = y/2
+    resultado_parcial = y+x
+
+    inteiro resultado = total * resultado_parcial
+    retorne resultado
+  }
+}
+
+
+
+// ESTE SEGUNDO CODIGO MOSTRA COMO CALCULAR A NOTA DE UM ALUNO EM PORTUGOL, E APRENDEMOS ACERCA DA REUTILIZACAO DO CODIGO///
+
+programa {
+  funcao inicio() {
+    real a, b, nota_a, nota_b
+    escreva("Digite a nota 1 e 2 do aluno A: ")
+    leia(a)
+    leia(b)
+    escreva("Digite a nota 1 e 2 do aluno B: ")
+    leia(nota_a)
+    leia(nota_b)
+
+    escreva("Media do aluno A: ", media_aluno(a, b))
+    escreva("\nMedia do aluno B: ", media_aluno(nota_a, nota_b))
+  }
+
+  funcao real media_aluno(real nota_a, real nota_b){
+    retorne (nota_a + nota_b)/2
+  }
+}
