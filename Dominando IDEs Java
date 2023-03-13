@@ -1,0 +1,26 @@
+Java é uma linguagem de programação orientada a objeto criada na decada 90, pela  empresa Microsystem e aposteriormente adquirida pela oracle em 2008
+        
+        
+                                                   Plataforma vs Linguagem
+                                                   
+A linguagem de programação java é a linguagem convecional da plataforma java, mas nao é a sua unica linguagem.
+Uma grande vantagem da plataforma é a de não estar presa a um unico sistema operacional ou hardware, pois seus programas rodam atraves de uma maquina virtual que pode ser emulada.
+
+    Java SE (Java platform, standard edition)
+    Java EE (Java platform, Enterprise edition)
+    Java ME (Java platform, Micro edition)
+    
+                                    Fases  da execucao java
+                                    
+                                    
+1-> Escrevemos o seu codigo 
+
+
+                                    JDK x JRE
+                                    
+JDK (Java development kit) é o kit de desenvolvimento java responsavel por compilar codigo-fonte(.java) em bytecode (.class)
+
+JVM (Java virtual machine) é a maquina virtual do java responsavel por executar o bytecode(.class)
+
+
+Link de como instalar JDK na DIO https://web.dio.me/course/dominando-ides-java/learning/0c9c5a4b-b1e8-4fbd-8e24-cf8f8275dece?back=/track/banco-pan-java-developer&tab=undefined&moduleId=undefined 
