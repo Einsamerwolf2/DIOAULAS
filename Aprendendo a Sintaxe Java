@@ -1,0 +1,226 @@
+                ( uma classe bem estruturada não quer guerra com ninguem)
+
+A escrita de codigos de um programa é feito  atraves da composição de palavras pre-definidas pela linguagem com as expressoes que utilizam para determinar o nome do nossos arquivos, classes, atributos e metodos.
+
+é muito comum mesclarmos expressoes no idioma americano com o nosso vocabulario. Existem projectos que recomendam que toda a implementacao do seu programa seja escrito na lingua inglesa.
+
+
+                        public class MinhaClass {
+                              // O CODIGO AQUI
+                        }
+                        
+public class MinhaClass {
+    public static void main(String[] args) {
+        System.out.print ("Bem-vido turma!! Happy Coding :)");
+    }
+}
+
+NB: qualquer linguam tem uuma conveção de caracteres
+
+JAVA BASICO
+
+  * Arquivo .java: Todo arquivo .java deve começar com letra MAIUSCULA. Se a palavra for composta, a segunda deve tambem ser maiuscula, exemplo:
+      Calculadora.java, CalculadoraCientifica.java
+      
+  * Nome da classe no arquivo: A classe deve possuir o mesmo nome do arquivo.java, exemplo:
+      // arquivo CalculadoraCientifica.java
+      
+      public class CalculadioraCientifica {
+      
+      }
+      
+NB: O nome da classe deve ser o mesmo que o nome do arquivo, pois se for diferente tera um erro.
+
+  * Nome Variavel: toda variavel deve ser escrita com letra minuscula, porem se a palavra for composta, a primeira letra da segunda palavra devera ser MAIUSCULA, exemplo: ano e anoFabrico. O nome dessa pratica paraq nomear variavel dessa forma se chama "camelCase". 
+      String MZ = "Moçambique"
+      double PI = 3.14
+      int PROVINCIAS_MOCAMBICANAS = 11
+      int ANO_2000 = 2000
+      
+RECOMENDACOES: Para declarar uma variavel nos podemos utilizar caracteres, numeros e simbolos, porem devemos seguir algumas regras da linguagem que sao:
+      * Deve conter apenas letras, _(underfine), $ ou numeros de 0 a 9
+      * Deve obrigatoriamente se iniciar por uma letra (preferencialmente), _ ou $, jamais com numero
+      * Deve iniciar com uma letra maiuscula (boa pratica -  ver abaixo)
+      * Nao pode conter espacos
+      * Nao podemos usar palavras-chave da linguagem
+      * O nome deve ser unico dentro de um escopo
+      
+// Declaracao invalida de variaveis
+  
+  int numero&um = 1; //Os unics simbolos permitidos sao _ e $
+  int 1numero = 1; // Uma variavel nao pode comecar com numero
+  int numero um := 1 // Nao pode ter espaco no nome da variavel
+  int long = 1; // long faz parte das palavras reservadas da linguagem
+  
+  
+// Declaracao valida de variavel
+
+  int numero$um =  1;
+  int numero1 = 1;
+  int numeroum = 1;
+  int longo = 1;
+  
+Declarando variavel e metodos
+
+Como identificar entre declaracao de variaveis e metodos em nosso programa? Existe uma estrutura comum para ambas as finalidades, exemplo:
+    * Declarar uma variavel em java segue sempre a seguinte estrutura:
+    
+  // Estrutura
+  SEMPRE toda variavel na liguagem java devemos dizer:
+    Tipo, NomeBemDefinido = Atribuicao (Opcional em algunns casos)
+  
+  // Exemplo
+  
+  int idade = 25;
+  double altura = 1.62;
+  dog spike; //observe que aqui a variavel spike nao tem valor atribuido
+
+2
+public class MinhaClass {
+
+    public static void main(String[] args) {
+      string meuNome = "Edilson";
+      
+      int anoFabrico = 2022;
+      
+      boolean verdadeiro = false;
+      
+      anoFabrico = 2018;
+    }
+}
+
+3
+public class MinhaClass {
+    public static void main(String[] args) {
+      String primeiroNome = "Tyga";
+      String segundoNome = "Lee";
+      
+      String nomeCompleto = nomeCompleo (primeiroNome, segundoNome);
+      
+      System.out.println(nomeCompleto);
+    }
+public static String nomeCompleto (String primeiroNome, String segundoNome) {
+  return primeiroNome.concat(" ").concat(segundoNome);
+  
+}
+}
+
+NB: é posssivel concatenar usando a palavra "concat" como tambem poddemos concatenar usando o sinalr "+" que é a mesma coisa, bastando alterar no concat ou + vise verrsa.
+
+      IDENTACAO:
+      
+Basicamente ◙ um termo utilizado para escrever o codigo do programa de forma hierarquica, facilitando assim visualizacao e o entendimento do programa
+
+Organizando arquivos
+  A medida que o nosso sistema vai evoluindo, surgem novos arquivos (codigo fonte) em nossas estrutura de arquivos do projeto. Isso exige que seja realizado uma organizacao destes arquivos atraves de pacotec (package), ou seja uma forma de criar subdirectorios do projeto.
+  
+JAVA BEANS
+  Umas das maiorees dificuldades na programacao é escrever algoritmos legiveis a nivel que sejam compreendidos por todo seu time ou por voce mesmo no futuro. Para isso a linguagem java sugere, atraves de convencoes, formas de escrita universal para nossas classes, atributos, metodos pacotes 
+  
+  Tipos e Variaveis 
+  
+Aqui iremos explorar os tipos de dados numericos inteiros, numericos decimaias, logicos, caracteres e suas aplicabilidades. Explicar a diferenca entre definicao de variaveis e constantes.
+
+TIPOS DE DADOS
+  No java, exitem algumas palavras reservadas para representação dos tipos de dados basicos que precisem ser manipulados para a construcao de programaas. Estes tipos de dados sao conhecidos como tipos primitivos (PRIMITIVE TYPES)
+  
+          OS OITO (8) TIPOS PRIMITIVOS EM JAVA:
+            int, byte, short, long, float, double, boolean e char - esses tipos nao considerados objetos, e por tanto representam valores brutos e sao armazenados na pilha de memoria (memory stack)  
+            
+VARIAVEIS vs CONSTANTES
+    Uma variavel é uma area de memoria, associada a um nome, que pode armazenar valores de um determinado tipo. Um tipo de dado define um conjunto de valores e um conjunto de operacoes. Java é uma linguagem com rigidez de tipos, diferentes de linguagens como javascript, onde declarar o tipo da variaveel nao e obrigatorio
+    
+    Ja as constantes sao valores armazenados em memoria que nao podem ser modificados depois de declarados. Em java, esses valores sao representados pela palavra reservada "final", seguida do tipo.
+    
+    Por convencao, constantes sao sempre escritas em CAIXA ALTA
+    
+    NB: So por estar em caixa alta nao quer dizer que nao pode ser alterada, mas deve-se tambem escrever o final
+    
+Operadores 
+
+    Sao simbolos especiais que tem um segnificado proprio para a linguagem e estao associados a determinadas operações.
+    
+TIPOS DE OPERADORES:
+    * Atribuicao - é utilizado para definir o valor ninicail ou sobrescrever o valor de uma variavel. em java definimos um tipo, nome e opcionalmente atribuimos um valor a variavel atraves do operador de atribuicao. 
+        Exemplo:
+          String nome = "Tyga";
+          int idade =  15;
+          double peso = 67.6;
+          char sexo = 'M';
+          boolean doadorOrgao = false;
+          date dataNascimento = new Date();
+          
+    * Aritmeticos - é utilizado para realizar operações matematicas entre valores numericos, podendo se tornar ou nao uma expressao mais complexa.
+    
+    Os operadores aritmeticos sao: + (adicao), - (subtracao), * (multiplicacao) e / (divisao).
+           Exemplo:
+            double soma = 10.5 + 15.7;
+            int subtracao = 113 - 25;
+            int multiplicacao = 20 * 9;
+            int divisao = 15 / 3;
+            int modulo = 18 % 3;
+            double resultado = (10 * 7) + (20/4);
+            
+      ATENCAO! O operador de adicao (+), quando utilizado em variaveis do tipo texto, realizara a "concatenacao de texto" 
+      
+    * Unarios -  sao operadores aplicam juntamente com um outro operador aritmetico. Eles realizam alguns trabalhos basicos como incrementar, decrementar, inverter valores numericos e booleanos.
+        (+) Operador unario de valor positivo - numeros sao positivos sem esse operador explicitamente;
+        (-) Operador unario de valor negativo - nega um numero ou expressao aritmetica;
+        (++) Operador unario incremento de valor - incrementa o valor em 1 unidade;
+        (--) operador unario de decrimento de valor - decrementa o valor  em 1 unidade;
+        (!) Operador unario logico de negacao -  nega o valor de uma expressao booleana; 
+        
+    * Ternario - é uma forma resumida para definir uma condicao e escolher por um dentre dois valores. Voce deve pensar numa condicao ternaria como se fosse uma condicao IF normal, porem, de uma forma em que toda a sua estrutura estara escrita numa unica linha.
+    O operador ternario é representado  pelos simbolos ?: utilizados na seguinte estrutura de sintaxe:
+    
+    * Relacionais - avaliam a relacao entre duas variaveis ou expressoes. Nest caso, mais precisamente, definem se o operando a esquerda é igual, diferente, menor, menor ou igual, maior ou maior ou igual ao da direita, retornando um valor booleano como resultado (V ou F).
+      == IGUAL A
+      != DIFERENTE DE 
+      > MAIRO QUE
+      >= MAIOR OU IGUAL A 
+      < MENOR
+      <= MENOR OU IGUAL A  
+      
+    * Logicos - representam o recurso que nos permite criar expressoes logicas maiores a partir da juncao de duas ou mais expressoes. Basicamente aqui usamos a tabela verdade ou falso
+        && Operador Logico "E"
+        || Operador Logico "OU"
+        
+     EXERCITANDO
+      Vamos criar um exemplo de uma classe para representar uma smartTv onde:
+        1- Ela tenha as caracteristicas: ligada (boolean), canal(int) e volume(int)
+        2- Nossa Tv podera ligar e desligar e assim mudar o estado ligada
+        3- Nossa Tv aumentara e diminuira o volume sempre em +1 ou -1
+        4- Nossa Tv podera mudar o canal de 1 em 1 ou definindo o  numero correspondente
+        
+        Na src criamos um ficheiro de nome ex (SmartTv.java)
+        
+        public class SmartTv {
+    boolean ligada=false;
+    int canal=1;
+    int volume=25;
+    
+    public void ligar(){
+        ligada=true;
+    }
+    public void desligado(){
+        ligada=false;
+    }
+}
+        
+        Na src criamos um ficheiro de nome ex (usuario.java)
+        public class Usuario {
+    
+    
+    public static void main(String[] args) throws Exception {
+        
+        
+        SmartTv smartTv = new SmartTv();
+        
+        System.out.println("TV Ligada ? " + smartTv.ligada);
+        System.out.println("TV Ligada : " + smartTv.canal);
+        System.out.println("TV Ligada : " + smartTv.volume);
+        
+        smartTv.ligar ();
+        System.out.printl("Novo Status -> TV Ligada ? " + smartTv.Ligada)
+    }
+}
