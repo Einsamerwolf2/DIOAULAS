@@ -1,0 +1,31 @@
+é um grupo de 0 ou mais codigos quais trabalham em conjunto para executar uma operacao
+
+Tipos:
+  * Locais: dentro de metodos
+  * Estaticos: dentro de classes
+  * Intancia: dentro de classes
+  
+  Locais 
+  
+  {
+  
+  ...
+  
+  }
+  
+  Exemplos:
+  if(autorizado) {
+    carregarPerfil
+    DirecionarpaginaPrincipal
+  ]
+  
+  if (menorIdade)
+    DirecionarPaginaProibida
+    
+    NB: Quando temos uma linha de execucao nao é obrigado a abrir e fechar as chaves
+    
+  if(autorizado) {
+  ...
+  } else {
+  
+    }
