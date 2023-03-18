@@ -1,0 +1,74 @@
+USUARIO.java
+
+public class Usuario {
+    public static void main(String[] args) throws Exception {
+
+        SmartTv smartTv = new SmartTv();
+
+        smartTv.diminuirVolume();
+        smartTv.diminuirVolume();
+        smartTv.diminuirVolume();
+        smartTv.aumentarVolume();
+
+
+        System.out.println("Canal Atual : " + smartTv.canal);
+        
+        smartTv.mudarCanal(13);
+        
+        System.out.println("Canal Atual : " + smartTv.canal);
+        
+        System.out.println("Volume Atual : " + smartTv.volume);
+
+        System.out.println("TV Ligada ? " + smartTv.ligada);
+        System.out.println("Canal Atual : " + smartTv.canal);
+        System.out.println("Volume Atual : " + smartTv.volume);
+
+        smartTv.ligar ();
+        System.out.println("Novo Status -> " + smartTv.ligada);
+
+        smartTv.desligar ();
+        System.out.println("Novo Status -> " + smartTv.ligada);
+        
+    }
+}
+
+SMARTTV.java
+
+public class SmartTv {
+    boolean ligada=false;
+    int canal=1;
+    int volume = 25;
+
+    public void mudarCanal(int novoCanal){
+        canal = novoCanal;
+    }
+
+
+    public void aumentarCanal(){
+        canal++;
+    }
+
+    public void DiminuirCanal(){
+        canal--;
+    }
+
+    public void aumentarVolume(){
+        //volume = volume + 1;
+        volume++;
+        System.out.println("Aumentando o volume para " + volume);
+    }
+
+    public void diminuirVolume(){
+        //volume = volume - 1;
+        volume--;
+        System.out.println("Diminuindo o volume para " + volume);
+    }
+
+
+    public void ligar(){
+        ligada=true;
+    }
+    public void desligar(){
+        ligada=false;
+    }
+}
