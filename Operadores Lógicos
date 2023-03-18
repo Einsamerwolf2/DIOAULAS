@@ -1,0 +1,77 @@
+Sao simbolos especiais quais sao capazes de realizar comparacoes logicas entre operadores logicos ou expressoes e em seguida retornar um resultado
+
+Tipos:
+  * Conjucao
+  * Disjuncao
+  * Disjuncao exclusiva
+  * Negacao
+  
+  
+  
+  * Conjucao: operacap logica que so e verdadeira quando ambos os operados ou expressoes envolvidasd sao verdade
+  
+  
+  Simbologia:
+    * &&
+  Terminologia:
+    * and(e)
+    
+    O-E   O-E   R
+     V     V     V   
+     V     F     F
+     F     V     F
+     F     F     F
+     
+     O - Operando   E - Expressao     R -  Resultado
+     
+    * Disjuncao: So é falso quando ambos os operandos ou expressoes envolvidas sao falsos
+    
+    Simbologia:
+      * ||
+    Terminologia:
+      * or (ou)
+      
+      O-E   O-E   R
+      V     V     V
+      V     F     V
+      F     V     V
+      F     F     F
+      
+      O - Operando   E - Expressao     R -  Resultado
+      
+    Disjuncao exclusiva: So é verdadeiro quando ambos os operandos ou expressoes sao opostos
+    
+    Simbologia:
+      * ^
+    Terminologia:
+      * xor
+      
+      O-E   O-E   R
+      V     V     F
+      V     F     V
+      F     V     V
+      F     F     F
+      
+       O - Operando   E - Expressao     R -  Resultado
+      
+      Negacao: operacao que inverte o valor logico de um operando ou expressao
+      
+      Simbologia:
+        * !
+      Terminologia:
+        inversao
+        
+        O-E   R
+        V     F
+        F     V
+        
+        O - Operando   E - Expressao     R -  Resultado
+        
+        
+Qual utilizar?
+R: Depdende da necessidade
+
+
+Curiosidade
+  * Operadores bitwise: & e | // Nao é um operador logico
+  * Operadores shift: ~, >>, >>>, << // Ou inverter os bit dos numeros ou inverter os zeros a esquerda ou a direito. E dificilmente iremos usar esses operadores e lembre-se  NAO SAO OPERADORES LOGICOS
