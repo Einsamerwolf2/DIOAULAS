@@ -1,0 +1,41 @@
+Atribuicao e Referencia
+
+  * As atribuicoes em java sao por copia de valor sempre;
+  * Com tipo primitivo, copiamos o valor em memoria;
+  * Com objecto cipiamos o valor da referencia em memoria, sem duplicar o objecto.
+  
+public class Main {
+  public static void main(String[] args) {
+    
+    int intA = 1;
+    int intB = intA;
+    
+    System.out.println("intA=" + intA + " intB=" + intB);
+    intA = 2;
+    System.out.println("intA=" + intA + " intB=" + intB);
+    
+    MeuObj objA = new MeuObj( num: 1);
+    MeuObj objB = objA
+    
+    System.out.println("intA=" + intA + " intB=" + intB);
+    objA.setNum(2);
+    System.out.println("intA=" + intA + " intB=" + intB);
+  }
+}
+
+public class MeuObj {
+  
+  Integer num;
+  
+  public void setNum(Integer num){
+    this.num = num;
+  }
+    public void setNum(Integer num){
+    this.num = num;
+  } 
+  
+  @Override
+  public String toString() {
+    return this.num.toString();
+  }
+}
