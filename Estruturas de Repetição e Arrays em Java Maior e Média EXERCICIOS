@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/*
+ Faca um programa que leia 5 numeros
+ e informe o maor numero
+ e a media desses mnumeros.
+ */
+
+public class MaiorEMedia {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        int numero;
+        int maior = 0; // como nao tem algum numero, o maior valor é 0
+        int soma = 0;
+
+        int count = 0;
+
+        do { //aqui o programa entra neste bloco independentimente se o caso for verdadeiro ou falso
+            System.out.print("Numero: ");
+            numero =  scan.nextInt();
+
+            if (numero > maior) maior = numero;
+
+            soma = soma + numero;
+            
+
+            count = count + 1;
+            System.out.println("Maior: " + maior);
+            System.out.println("Media: " + (soma/5));
+        } while(count < 5); // aqui o program para quando atinge 5 contagens
+    }
+}
