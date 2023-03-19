@@ -1,0 +1,45 @@
+/*
+ faca um programa que leia um vetor de 6 caracteres, e diga quantas consoantes foram lidas Imprima as consoantes.
+ */
+
+import java.util.Scanner;
+
+public class consoantes  {
+    public static void main(String[] args) {
+        Scanner scan =  new Scanner(System.in);
+
+        String[] consoantes = new String[6];
+
+        int quantidadeConsoantes = 0;
+
+        int count = 0;
+        do {
+
+            System.out.println("Letra: ");
+            String letra = scan.next();
+
+            String anotherString;
+            if(  !(letra.equalsIgnoreCase(anotherString:"a") | 
+                        letra.equalsIgnoreCase(anotherString:"e") | 
+                        letra.equalsIgnoreCase(anotherString:"i") | 
+                        letra.equalsIgnoreCase(anotherString:"o") | 
+                        letra.equalsIgnoreCase(anotherString:"u")) )  {
+                    consoantes[count] = letra;
+                    quantidadeConsoantes++; // isto é o mesmo que quantidadeConsoantes =  quantidadeConsoantes + 1; 
+                }
+
+                count++;
+
+     } while(count < consoantes.length);
+
+
+     for( String consoante : consoantes ) {
+        
+     }
+
+    }
+    
+}
+
+
+TENHO QUE RESOLVER A SITUACAO DO ERRO (:)
