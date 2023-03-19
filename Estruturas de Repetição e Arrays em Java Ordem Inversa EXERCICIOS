@@ -1,0 +1,26 @@
+/*
+ Crie um vetor de 6 umeros inteiros e mostre-os na ordem inversa
+ */
+
+ public class ordemInversa{
+    public static void main(String[] args) {
+        
+        int [] vetor = {-5, -6, 50, 9, 4};  // por se tratar de arrays abrimos e fechamos colchetes ([]) e dentro de array deve existir obrigatoriamente devem ser do mesmo tipo
+
+        //System.out.println(vetor.length);
+
+        System.out.print("Vetor: ");
+        int count = 0;
+        while(count < (vetor.length-1)) {
+            int i;
+            System.out.print(vetor[count] + " ");
+            count++; //ou count = count + 1
+
+        }
+        System.out.print("\n");
+        for(int i = (vetor.length - 1); i >= 0; i --){
+
+        }
+
+        }
+ }
