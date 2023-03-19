@@ -1,0 +1,25 @@
+Java Nota
+
+import java.util.Scanner;
+
+/*
+ Faca um programa qye peca um nota, entre 0 a 10.
+ Mostre uma mensagem caso o valor seja invalido e continue pedindo
+ ate que ususario informe um valor valido
+ */
+
+public class Nota {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in); // Aqui é a entrada de um valor independentimente da condicao
+
+        int nota; // Isto indica que o valor a ser inserido é um numero e nao letra ou caracter especial
+
+        System.out.println("Nota: ");
+        nota = scan.nextInt();
+
+        while (nota < 0 | > 10) { //aqui esta dizendo que se a nota for inferior a 0 ou superior a 10, o programa pede um valor valido de 0 a 10, e a condicao de para este processo e colocando uma nota valida
+            System.out.println("Nota Invalida! DIgite novamente: ");
+            nota = scan.nextInt(); // Aqui é a entrada de um valor
+        }
+    }
+}
