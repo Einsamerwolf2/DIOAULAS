@@ -1,0 +1,45 @@
+Pilhas
+[books-stack.jpg]
+
+Uma pilha é uma estrutura de dados que admite remoção(https://www.ime.usp.br/~pf/algoritmos/aulas/array.html#remocao) de elementos e inserção(https://www.ime.usp.br/~pf/algoritmos/aulas/array.html#insercao) de novos objetos.  Mais especificamente, uma  pilha (= stack)  é uma estrutura sujeita à seguinte regra de operação:  sempre que houver uma remoção,
+
+o elemento removido é o que está na estrutura há menos tempo.
+
+Em outras palavras, o primeiro objeto a ser inserido na pilha é o último a ser removido. Essa política é conhecida pela sigla LIFO (= Last-In-First-Out)ou (ultimo a entrar primeio a sair.
+
+NB: PARA MAIS INFORMACOES SIGA O LINK ( https://www.ime.usp.br/~pf/algoritmos/aulas/pilha.html#:~:text=Pilhas,na%20estrutura%20h%C3%A1%20menos%20tempo.)
+
+Metodo Top:
+    No meuNo = pilha.top();
+    
+    No meuNo = INT ref.no;
+    
+    int numero = meuNo.getInt();
+    
+    int numero = INT;
+    
+Metodo Pop:
+    * No meuNo = pilha.pop();
+    
+    * No meuNo = INT refno; (aqui nos tiramos o no da pilha)
+    
+    * int numero = meuNo.getInt();
+    
+    * int numero = INT;
+    
+    
+Metodo Push:
+    * No meuNo = new No();
+    
+    * meuNo.setInt(1);
+    
+    * meuNo
+    
+    
+Metodo isEmpty:
+    public boolean isEmpty(){
+        if(refNo == null){
+            return true;
+        }
+        return false;
+    }
