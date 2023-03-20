@@ -1,0 +1,83 @@
+EXERCICIOS PRATICOS
+
+public class No {
+
+    private int data;
+    private No refNo = null;
+    
+    
+    public No() {
+    }
+    
+    public No(in dado) {
+        this.dado = dado;
+    }
+    
+    public int getDado() {
+        return dado;
+    }
+    
+    public void setDado(int dado) {
+        this.dado = dado;
+    }
+    
+    public No getReNo() {
+        return refNo;
+    }
+    
+    @Override
+    public String toString() {
+        return "No{" + 
+                  "dado" + dado +
+                  '}';
+    }
+}
+
+public class Pilha {
+
+    private No refNoEntradaPilha;
+    
+    public Pilha() {
+        this.refNoEntradaPilha = null;
+    }
+    
+     public void push(No novoNo){
+        No refAuxiliar = refNoEntradaPilha;
+        refNoEntradaPilha =  nonoNo; 
+        refEntradaPilha.setReNo(refAuxiliar);
+        
+    }
+    
+    public No pop(){
+        if(!this.isEmpty() // este this é opcional){
+            No noPoped = refNoEntradaPilha;
+            refNoEntradaPilha = novoNo;
+            refNoEntradaPilha.setRefNo(refAuxiliar);
+        }
+        return noPoded
+    }
+    
+    public No top(){
+      return refNoEntradaPilha;
+    }
+    
+    public boolean isEmpty(){
+        
+        if(refNoEntradaPilha == null){
+            return true;
+        }
+        
+        return false;
+        //return refNoEntradaPilha == null ? true : false;, é a mesma coisa que a funcao if acima mencionada
+    }
+}
+
+/* public class Pilha {
+
+    private No refNoEntradaPilha;
+    
+    public Pilha() {
+      this.refNoEntradaPilha = null;
+    }    
+    
+*/}
