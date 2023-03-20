@@ -1,0 +1,65 @@
+O no é um espaco em memoria que armazena um dado ou uma informação. Nos nao temos nos infinitos, o ultimo no enviamos para null (nullo)
+
+
+EXEMPLO: ESTE E O CONSTRUTOR QUE APENAS RECEBE O CONTEUDO.
+    public class No {
+      
+      private String conteudo;
+      private No proximaNo;
+      
+      public No(String conteudo) {
+        this.proximoNo = null;
+        this.conteudo = conteudo;
+      }
+      
+      public String getConteudo() {
+        return conteudo;
+      }
+      
+      public void setConteudo(String conteudo) {
+        this.conteudo = conteudo;
+      }
+      
+      public No getProximoNo() {
+        return proximoNo;
+      }
+      
+      public void setProximoNo(No proximaNo) {
+        this.proximoNo =  proximoNo;
+      }
+      
+      @Override
+      public String toString() {
+        return "No{" + 
+                  "conteudo='" + conteudo + '\'' +
+                  '}';
+      }
+      
+    }
+    
+    
+    public class Main {
+       
+       public static void main(String[] args){
+          
+          No no1 = new No( conteudo "Conteudo no1");
+          
+          No no2 = new No( conteudo "Conteudo no2");
+          no1.setProximoNo(no2);
+          
+          No no3 = new No( conteudo "Conteudo no3");
+          no2.setProximoNo(no3);
+          
+          No no4 = new No( conteudo "Conteudo no4");
+          no3.setProximoNo(no4);
+          
+          //basicamente isto faz (no1->no2->no3->no4->null
+          
+          System.out.printlm(no1);
+          System.out.println(no1.getProximoNo());
+          System.out.println(no2);
+          
+          System.outprintln(no1);
+          
+       }
+    }
