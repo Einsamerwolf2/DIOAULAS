@@ -1,0 +1,125 @@
+EXERCICIOS PRATICOS
+
+public class No {
+
+    private int data;
+    private No refNo = null;
+    
+    
+    public No() {
+    }
+    
+    public No(in dado) {
+        this.dado = dado;
+    }
+    
+    public int getDado() {
+        return dado;
+    }
+    
+    public void setDado(int dado) {
+        this.dado = dado;
+    }
+    
+    public No getReNo() {
+        return refNo;
+    }
+    
+    @Override
+    public String toString() {
+        return "No{" + 
+                  "dado" + dado +
+                  '}';
+    }
+}
+
+public class Pilha {
+
+    private No refNoEntradaPilha;
+    
+    public Pilha() {
+        this.refNoEntradaPilha = null;
+    }
+    
+     public void push(No novoNo){
+        No refAuxiliar = refNoEntradaPilha;
+        refNoEntradaPilha =  nonoNo; 
+        refEntradaPilha.setReNo(refAuxiliar);
+        
+    }
+    
+    public No pop(){
+        if(!this.isEmpty() // este this é opcional){
+            No noPoped = refNoEntradaPilha;
+            refNoEntradaPilha = novoNo;
+            refNoEntradaPilha.setRefNo(refAuxiliar);
+        }
+        return noPoded
+    }
+    
+    public No top(){
+      return refNoEntradaPilha;
+    }
+    
+    public boolean isEmpty(){
+        
+        if(refNoEntradaPilha == null){
+            return true;
+        }
+        
+        return false;
+        //return refNoEntradaPilha == null ? true : false;, é a mesma coisa que a funcao if acima mencionada
+    }
+    
+    @Override
+    public String toString(){
+    
+        String stringRetorno = "--------------------------\n";
+        stringReterno += "    Pilha\n";
+        stringRetorno += "------------------------\n";
+        
+        No noAuxiliar = refEntradaPilha;
+        
+        while (true){
+            if(noAuxiliar) != null){
+                stringReterno += "[No{dado=" + noAuxiliar.getdado() +"}]\n";
+                noAuxiliar = noAuxiliar.getRefNo();
+            }else{
+                break;
+            }
+        }
+        stringReterno += "=======================\n"
+        return stringReterno;
+    }
+}
+
+/* public class Pilha {
+
+    private No refNoEntradaPilha;
+    
+    public Pilha() {
+      this.refNoEntradaPilha = null;
+    }    
+    
+*/}
+
+
+public class Main {
+
+    public static void main(String[] args){
+        Pilha minhaPilha = new Pilha();
+        
+        minhaPilha.push(new No( dado: 1));
+        minhaPilha.push(new No( dado: 2));
+        minhaPilha.push(new No( dado: 3));
+        minhaPilha.push(new No( dado: 4));
+        minhaPilha.push(new No( dado: 5));
+        minhaPilha.push(new No( dado: 6));
+        
+        System.out.println(minhaPilha);
+        
+        System.out.println(minhaPilha.pop());
+        
+        System.out.println(minhaPilha);
+    }
+}
