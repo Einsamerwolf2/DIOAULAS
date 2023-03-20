@@ -1,0 +1,10 @@
+FICO (First In, First Out), ou o primeiro a entrar o primeiro a sair.
+
+NB: PARA MAIS INFORMACOES SIGA O LINK (https://www.freecodecamp.org/portuguese/news/filas-de-prioridades-em-java-explicadas-e-com-exemplos/#:~:text=Uma%20fila%20(ou%2C%20em%20ingl%C3%AAs,fila%20exatamente%20na%20mesma%20ordem.)
+
+
+Tipos de metodos:
+    * Enqueue() NB:PARA MAIS INFORMACOES (https://www.ime.usp.br/~pf/estruturas-de-dados/aulas/queue.html)
+    * Dequeue NB: PARA MAIS INFORMACOES (https://www.geeksforgeeks.org/deque-interface-java-example/)
+    * isEmpty
+    
