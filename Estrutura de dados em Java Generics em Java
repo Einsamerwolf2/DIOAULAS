@@ -1,0 +1,62 @@
+
+
+
+Lista<String> minhaLista = new List<>();
+
+public class Lista<T> {
+
+    private T t;
+    .
+    .
+    .
+    
+}
+
+Contexto:
+  * Evitar casting excessivo (evita)
+  * Evitar codigos redundantes (evita)
+  * Encontrar erros em tempo de compilacao (encontra)
+  * Introduzido desde o Java SE 5.0
+  
+Wildcards (o curinga)
+  * Unknow wildcards (unbounded)
+  * Bounded wildcard (upper bounded/lower bounded)
+  
+ 
+ 
+    Unknow Wildcard
+    
+ public void imprimeLista(List<?>lista){
+      for(Object obj : lista){
+          System.outprintln(obj);
+      }
+  }
+  List<Aluno> minhaLista = new List<Aluno>();
+  imprimeLista(minhaLista);
+  
+       UpperBounded Wildcard
+       
+    public void imprimeLista(List<? extends Pessoa> listaPessoal){
+        for(Pessoa p : listaPessoas){
+            System.out.println(p);
+        }
+    }
+    List<Aluno> minhaLista = new List<Aluno>();
+    imprimeLista(minhaLista);
+    
+        LowerBounded Wildcard
+        
+     public void imprimeLista(List<? super Pessoa> listaPessoas){
+          for(Pessoa p : listaPessoa){
+              System.out.println(p);
+          }
+     } 
+     Lis<Aluno> minhaLista = new List<Aluno>();
+     imprimeLista(minhaLista);
+     
+Convenção:
+  * K para "Key". exemplo : Map<K,V>
+  * V para "Value", exemplo : Map<K,V>
+  * E para "Element", exemplo : List<E>
+  * T para "Type",  exemplo : Collections#addAll
+  * ? quando generico
