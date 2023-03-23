@@ -1,0 +1,4 @@
+
+A LinkedList do Java, especificamente, implementa uma lista circular duplamente encadeada: cada elemento guarda a posição do próximo e do anterior, formando um círculo, onde o elemento depois do último é o primeiro, e o anterior a este, é aquele.
+
+NB: PARA MAIS INFORMACOES SIGA O LINK ( https://www.devmedia.com.br/linkedlists-o-que-acontece-por-tras-da-interface/24613#:~:text=A%20LinkedList%20do%20Java%2C%20especificamente,anterior%20a%20este%2C%20%C3%A9%20aquele. )
