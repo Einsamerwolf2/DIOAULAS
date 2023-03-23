@@ -1,0 +1,13 @@
+As árvores são estruturas de dados baseadas em listas encadeadas que possuem um nó superior também chamado de raiz que aponta para outros nós, chamados de nós filhos, que podem ser pais de outros nós.
+
+
+PARA MAIS INFORMACOES SIGA O LINK ( https://www.devmedia.com.br/trabalhando-com-arvores-binarias-em-java/25749#:~:text=As%20%C3%A1rvores%20s%C3%A3o%20estruturas%20de,ser%20pais%20de%20outros%20n%C3%B3s. , https://pt.wikipedia.org/wiki/%C3%81rvore_(estrutura_de_dados) , https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/heap.html ,  ) E ( https://www.youtube.com/watch?v=eiMMtyRBYCE&list=RDCMUCBL2tfrwhEhX52Dze_aO3zA&start_radio=1&rv=eiMMtyRBYCE&t=24  ,  https://www.youtube.com/watch?v=O4AqgoO42pc&list=PLxI8Can9yAHf8k8LrUePyj0y3lLpigGcl&index=12 )
+
+NB: ABRIR OS VIDEOS DA UNIVESP SOBRE ARVORES BINARIAS
+
+
+
+https://www.ime.usp.br/~pf/algoritmos/aulas/binst.html
+
+https://pt.wikipedia.org/wiki/%C3%81rvore_bin%C3%A1ria_de_busca
+
