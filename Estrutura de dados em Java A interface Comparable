@@ -1,0 +1,4 @@
+Comparable. Este método permite estabelecer uma ordem natural sobre objectos do tipo utilizado para parametrizar a interface. Colecções desses objectos podem então ser ordenadas utilizando métodos pré-definidos (e.g., Collections. sort ou Arrays
+
+
+https://www.coursera.org/lecture/orientacao-a-objetos-com-java/hands-on-usando-a-interface-comparable-R4NRu
