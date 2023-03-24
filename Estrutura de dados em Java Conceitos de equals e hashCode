@@ -1,0 +1,4 @@
+1. Uso de métodos hashCode () e equals () equals(Object otherObject)- Como o nome do método sugere, é usado para simplesmente verificar a igualdade de dois objetos. Sua implementação padrão simplesmente verifica as referências de objeto de dois objetos para verificar sua igualdade.
+
+
+NB: PARA MAIS INFORMACOES SIGA O LINK ( https://comoprogramarjava.com.br/frameworks/java-base/java-hashcode-e-equals-contrato-regras-e-melhores-praticas/#:~:text=1.,objetos%20para%20verificar%20sua%20igualdade. )
