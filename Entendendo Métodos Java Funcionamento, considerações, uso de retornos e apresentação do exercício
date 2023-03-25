@@ -1,0 +1,90 @@
+Funcionamento:
+
+    O metodo executa seu retorno quando:
+      * Completa todas suas instrucoes internas 
+      * Chega a uma declaração explicita re retorno
+      * Lança uma excecao
+      
+      
+NB: o que acontecer primeiro dessas 3 situações acima ira fazer o programa encerar
+
+  * O tipo de retorno do metodo é definido na sua criacao e pode ser um tipo primitivo ou objeto;
+  * O tipo de dado do return deve ser compativel com o do metodo;
+  * Se o metodo for sem retorno(void), pode ou nao ter um "return" para encerrar sua execucao.
+  
+  
+Exemplos
+public String getMensagem() {
+  return "Ola";
+}
+
+public doube getJuros() {
+  return 2.36;
+  
+}
+
+public int getParcelas() {
+  return 1.36f;
+}
+
+
+Exercitando
+recria a app que calcula a area dos 3 quadrilateros notaveis. Agora faca os metodos retornarem valores
+
+
+QAUDRILATEROS
+package one.digitalinnovation.basecamp;
+
+/**
+ * Classe de exemplo para o exercício da Aula 3 de Métodos.
+ */
+public class Quadrilatero {
+
+    public static double area(double lado) {
+
+        return lado * lado;
+    }
+
+    public static double area(double lado1, double lado2) {
+
+        return lado1 * lado2;
+    }
+
+    public static double area(double baseMaior, double baseMenor, double altura) {
+
+        return ((baseMaior+baseMenor)*altura) / 2;
+    }
+
+    public static void xpto() {
+
+        System.out.println("Antes");
+        return;
+    }
+
+    public static double abc() {
+        return 1.6;
+    }
+
+}
+
+MAIN
+package one.digitalinnovation.basecamp;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Retornos
+        System.out.println("Exercício retornos");
+
+        double areaQuadrado = Quadrilatero.area(3);
+        System.out.println("Área do quadrado:" + areaQuadrado);
+
+        double areaRetangulo = Quadrilatero.area(5,5);
+        System.out.println("Área do retângulo:" + areaRetangulo);
+
+        double areaTrapezio = Quadrilatero.area(7,8,9);
+        System.out.println("Área do trapézio:" + areaTrapezio);
+
+    }
+}
